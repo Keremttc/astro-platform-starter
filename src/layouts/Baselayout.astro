@@ -1,0 +1,25 @@
+---
+
+---
+
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8" />
+        <title><slot name="title">Standaard titel</slot></title>
+    </head>
+    <body style="font-family: system-ui; padding: 2rem;">
+        <header>
+            <h1>Mijn Astro"boy" test omgeving :)</h1>
+            <nav>
+                <a href="/">Home</a> |
+                <a href="/about">Over</a>
+            </nav>
+        </header>
+
+        <main>
+            <slot />
+            <!-- Hier komt de content van elke pagina -->
+        </main>
+    </body>
+</html>

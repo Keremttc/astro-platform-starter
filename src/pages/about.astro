@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import skills from '../data/skills.json';
+---
+
+<BaseLayout>
+    <h1 slot="title">Over Kerem</h1>
+    <p>"Professor, Do You Ever Think We'll See The End Of Hatred?"</p>
+
+    <h2>Mijn skills</h2>
+    <ul>
+        {skills.map((skill) => <li>{skill}</li>)}
+    </ul>
+</BaseLayout>
